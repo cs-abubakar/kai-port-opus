@@ -1,0 +1,9 @@
+export { Home } from './Home';
+export { About } from './About';
+export { Services } from './Services';
+export { CaseStudies } from './CaseStudies';
+export { Research } from './Research';
+export { Resume } from './Resume';
+export { Blog } from './Blog';
+export { BlogPost } from './BlogPost';
+export { Contact } from './Contact';
