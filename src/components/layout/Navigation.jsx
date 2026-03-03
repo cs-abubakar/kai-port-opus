@@ -28,10 +28,6 @@ export function Navigation() {
   }, []);
 
   useEffect(() => {
-    setIsMobileMenuOpen(false);
-  }, [location]);
-
-  useEffect(() => {
     if (isMobileMenuOpen) {
       document.body.style.overflow = 'hidden';
     } else {
@@ -131,6 +127,7 @@ export function Navigation() {
                   >
                     <Link
                       to={item.path}
+                      onClick={() => setIsMobileMenuOpen(false)}
                       className={`text-2xl font-medium transition-colors ${
                         location.pathname === item.path
                           ? 'text-amber-500'
@@ -149,6 +146,7 @@ export function Navigation() {
                 >
                   <Link
                     to="/contact"
+                    onClick={() => setIsMobileMenuOpen(false)}
                     className="inline-flex items-center px-8 py-4 bg-neutral-900 text-white text-lg font-medium rounded-full hover:bg-neutral-800 transition-colors"
                   >
                     Work with me

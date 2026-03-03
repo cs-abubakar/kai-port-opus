@@ -5,15 +5,11 @@ import {
   ArrowDownRight,
   TrendingUp,
   TrendingDown,
-  Target,
-  BarChart3,
-  Globe,
   MapPin,
   Calendar,
   MessageCircle,
   Quote,
-  ExternalLink,
-  ChevronDown
+  ExternalLink
 } from 'lucide-react';
 import { RevealOnScroll, CountUp } from '../components/animations';
 import { SectionHeader } from '../components/ui';
@@ -216,12 +212,6 @@ function HeroSection() {
 
 function ServicesPreview() {
   const previewServices = services.slice(0, 4);
-  const iconMap = {
-    Target: Target,
-    TrendingUp: TrendingUp,
-    BarChart3: BarChart3,
-    Globe: Globe
-  };
 
   return (
     <section className="py-24 lg:py-32 bg-white">
